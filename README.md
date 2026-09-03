@@ -7,6 +7,8 @@ Service B (8081): `/health`, `/call-echo?msg=...` (calls Service A)
 
 ```bash
 cd python-http/service-a
+python -m venv .venv
+source .venv/Scripts/activate
 pip install -r requirements.txt
 python app.py
 ```
@@ -15,6 +17,8 @@ python app.py
 
 ```bash
 cd python-http/service-b
+python -m venv .venv
+source .venv/Scripts/activate
 pip install -r requirements.txt
 python app.py
 ```
