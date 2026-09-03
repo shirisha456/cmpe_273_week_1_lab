@@ -8,7 +8,7 @@ Two independent Python Flask services that communicate over HTTP.
 ## Run Service A
 
 ```bash
-cd service-a
+cd python-http/service-a
 pip install -r requirements.txt
 python app.py
 ```
@@ -16,7 +16,7 @@ python app.py
 ## Run Service B (new terminal)
 
 ```bash
-cd service-b
+cd python-http/service-b
 pip install -r requirements.txt
 python app.py
 ```
@@ -46,7 +46,7 @@ service=service-a endpoint=/echo status=200 latency_ms=0.00
 service=service-b endpoint=/call-echo status=200 latency_ms=4.24
 ```
 
-![Success demonstration](image-3.png)
+![Success demonstration](python-http/image-3.png)
 
 ## Failure Demonstration
 
@@ -79,7 +79,7 @@ curl -i http://localhost:8081/health
 # {"status":"ok"}
 ```
 
-![Failure demonstration](image-1.png)
+![Failure demonstration](python-http/image-1.png)
 
 ## What Makes This Distributed?
 
